@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteles Padilla</title>
+</head>
+<body>
+    <h1>Pasteles Padilla</h1>
+    <h2>Los mejores pasteles de México</h2>
+    <img src=".\logoPasteles.PNG" alt="Logo de la Pastelería">
+    <hr>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Vista de clientes</a></li>
+                <li><a href="#">Vista de Administrador</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <hr>
+    <h2>Pedidos realizados</h2>
+    <form action="/accion.js" id="form1" method="post">
+    <table>
+        <tr>
+            <th>No. de pedido</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Teléfono</th>
+            <th>Dirección</th>
+            <th>C.P.</th>
+            <th>Pan</th>
+            <th>Cobertura</th>
+            <th>Toppings</th>
+            <th>Estado</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Juan Martínez</td>
+            <td>juan@hotmail.com</td>
+            <td>5564789958</td>
+            <td>Módulo pingüino, No. 24, Col, Nuevo Laredo, Ecatepec</td>
+            <td>88300</td>
+            <td>Chocolate</td>
+            <td>Chocolate amargo</td>
+            <td>Chispas de chocolate, Fresas con caramelo</td>
+            <td>
+                <select name="estado" id="estado">
+                <option value="Nueva">Nueva</option>
+                <option value="Completada">Completada</option>
+                <option value="En proceso">En proceso</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Pedro Fierro</td>
+            <td>pf5676@hotmail.com</td>
+            <td>5599780932</td>
+            <td>Benito Juárez, No. 15, Col. Heraldos, Ojo de agua</td>
+            <td>67550</td>
+            <td>Vainilla</td>
+            <td>Chocolate amargo</td>
+            <td>Chispas de chocolate</td>
+            <td>
+                <select name="estado" id="estado">
+                <option value="Nueva">Nueva</option>
+                <option value="Completada">Completada</option>
+                <option value="En proceso">En proceso</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Actualizar pedidos">
+    </form>
+    
+    
+    
+    <hr>
+    <h2>Existencia de los productos</h2>
+    <form action="/accion.js" id="form1" method="post">
+    <table>
+        <caption>Aquí tienes la última actualización en tu inventario. Los términos enteros representan el número 
+            de pasteles que te alcanzan, con la cantidad de ingredientes que tienes.</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Cantidad de producto total</th>
+                <th>Cantidad de producto disponible</th>
+                <th>Pedidos pendientes</th>
+                <th>Cantidades nuevas compradas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>.</th>
+                <th>.</th>
+                <th>.</th>
+                <th>.</th>
+                <th>.</th>
+            </tr>
+            <tr>
+                <th>Sabores de pan</th>
+            </tr>
+            <tr>
+                <th>Pan de chocolate</th>
+                <td>10</td>
+                <td>9</td>
+                <td>1</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Pan de vainilla</th>
+                <td>11</td>
+                <td>10</td>
+                <td>1</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Pan sabor fresa</th>
+                <td>10</td>
+                <td>10</td>
+                <td>0</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Pan de café</th>
+                <td>6</td>
+                <td>6</td>
+                <td>0</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Pan integral</th>
+                <td>6</td>
+                <td>4</td>
+                <td>2</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Hojaldre</th>
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Pan de tres leches</th>
+                <td>8</td>
+                <td>5</td>
+                <td>3</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>.</th>
+                <th>.</th>
+                <th>.</th>
+                <th>.</th>
+                <th>.</th>
+            </tr>
+            <tr>
+                <th>Sabores de cobertura</th>
+            </tr>
+            <tr>
+                <th>Cobertura de chocolate amargo</th>
+                <td>10</td>
+                <td>8</td>
+                <td>2</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Cobertura de chocolate dulce</th>
+                <td>6</td>
+                <td>6</td>
+                <td>0</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Cobertura de chocolate blanco</th>
+                <td>7</td>
+                <td>7</td>
+                <td>0</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Cobertura de crema batida</th>
+                <td>7</td>
+                <td>7</td>
+                <td>0</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Cobertura de crema con rompope</th>
+                <td>8</td>
+                <td>8</td>
+                <td>0</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Cobertura de crema de café</th>
+                <td>7</td>
+                <td>4</td>
+                <td>3</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Cobertura de lechera</th>
+                <td>3</td>
+                <td>3</td>
+                <td>0</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+<!--............................................................................................-->
+            <tr>
+                <th>.</th>
+                <th>.</th>
+                <th>.</th>
+                <th>.</th>
+                <th>.</th>
+            </tr>
+            <tr>
+                <th>Sabores de toppings</th>
+            </tr>
+            <tr>
+                <th>Chispas de chocolate</th>
+                <td>6</td>
+                <td>4</td>
+                <td>2</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Fresas con caramelo</th>
+                <td>5</td>
+                <td>4</td>
+                <td>1</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Ralladura de chocolate blanco</th>
+                <td>5</td>
+                <td>5</td>
+                <td>0</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Ralladura de chocolate oscuro</th>
+                <td>7</td>
+                <td>5</td>
+                <td>2</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Conejitos turín</th>
+                <td>10</td>
+                <td>9</td>
+                <td>1</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Frutas tropicales</th>
+                <td>6</td>
+                <td>6</td>
+                <td>0</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Rebanadas de kiwi</th>
+                <td>9</td>
+                <td>9</td>
+                <td>0</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Rebanadas de durazno</th>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Coco rayado</th>
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <th>Decoración (diseño) personalizada</th>
+                <td>10</td>
+                <td>10</td>
+                <td>0</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+
+        </tbody>
+        
+    </table>
+    <input type="submit" value="Actualizar existencia">
+    </form>   
+
+
+    <hr>
+    <h2>Acerca de la pastelería</h2>
+    <p>Pateles Padilla S.A. de C.V. Calle Miguel Hidalgo, No. 75. Delegación Azcapotzalco, Ciudad de México. CP 44930.</p>
+    <p>Teléfono: 5512885041. Horarios de atención: Lunes a sábado, de 08:00 a 16:00 hrs.</p>
+</body>
+</html>
+
+
+            
